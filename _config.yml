@@ -2,3 +2,4 @@ title: Skúšobný web
 description: Jednoduchá stránka
 lang: sk
 markdown: kramdown
+theme: jekyll-theme-cayman
