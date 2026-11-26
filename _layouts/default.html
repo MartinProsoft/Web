@@ -13,6 +13,7 @@
     <h2 class="project-tagline">{{ site.description }}</h2>
     <a href="{{ '/' | relative_url }}" class="btn">Domov</a>
     <a href="{{ '/o-projekte/' | relative_url }}" class="btn">O projekte</a>
+    <a href="{{ '/listok/' | relative_url }}" class="btn">Vlakový lístok</a>
   </section>
   <section class="main-content">
     {{ content }}
@@ -20,6 +21,9 @@
   </section>
   {% if page.url == '/' %}
   <script src="{{ '/script.js' | relative_url }}"></script>
+  {% endif %}
+  {% if page.url == '/listok/' %}
+  <script src="{{ '/listok.js' | relative_url }}" defer></script>
   {% endif %}
 </body>
 </html>
